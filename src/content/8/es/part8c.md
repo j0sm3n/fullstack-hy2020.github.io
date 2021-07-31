@@ -155,7 +155,7 @@ Person.find({ phone: { $exists: false }})
 
 ### Validación
 
-Al igual que en GraphQL, la entrada ahora se valida utilizando las validaciones definidas en el esquema de mangosta. Para manejar posibles errores de validación en el esquema, debemos agregar un bloque de manejo de errores _try/catch_ al método _save_. Cuando terminamos en la captura, lanzamos una excepción adecuada:
+Al igual que en GraphQL, la entrada ahora se valida utilizando las validaciones definidas en el esquema de mongoose. Para manejar posibles errores de validación en el esquema, debemos agregar un bloque de manejo de errores _try/catch_ al método _save_. Cuando terminamos en la captura, lanzamos una excepción adecuada:
 
 ```js
 Mutation: {
